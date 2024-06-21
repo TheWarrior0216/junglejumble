@@ -6,7 +6,7 @@ class GameService {
     const jumble = AppState.activeJumble
     console.log(jumble.body)
     if (jumble.body === newJumble) {
-      window.alert('🥳 You Won!!')
+      window.alert(`🥳 You Won in ${AppState.activeJumble.fastestTime} seconds!!`)
     }
     else {
       window.alert('U STINK')

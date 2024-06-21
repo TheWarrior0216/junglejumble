@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="bg-dark" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -39,7 +39,7 @@
   </header>
 
   <!-- SECTION -->
-  <main>
+  <main class="bg-dark">
 
     <section id="router-view">
       <!-- primary viewport -->
@@ -49,16 +49,17 @@
       <div class="container-fluid">
         <div class="row text-center">
           <div class="col-4">
-            <h1 class="p-5">Jungle Jumble</h1>
+            <h1 class="p-5 text-info">Jungle Jumble</h1>
           </div>
           <div class="col-12">
             <div class="row">
-              <div id="selectedJumble" class="col-md-7">
+              <div id="selectedJumble" class="col-md-7 py-5 bg-light border">
                 <h5 class="text-start ps-5"> Select Your Jumble!! </h5>
-                <div class="text-start ps-5"> When you are ready to type select a Jumble to Begin
+                <div class="text-start ps-5"> When you are ready to type select a Jumble to Begin. Remeber you have to
+                  Type it exactly as written
                 </div>
               </div>
-              <div class="col-md-5 bg-info">
+              <div class="col-md-5 bg-info border shadow">
                 <h3> Jumbles </h3>
                 <div id="Buttons" class="row">
                   <div class="col-12 text-start ps-5 py-5">
@@ -66,11 +67,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-7 bg-dark">
+              <div class="col-md-7 bg-light py-5 border">
                 <form onsubmit="app.GameController.checkJumble()">
-                  <textarea name="checkJumble" class="w-100 coolheight">
+                  <textarea name="checkJumble" class="w-75 coolheight border shadow">
                   </textarea>
-                  <button type="submit" class="btn btn-rounded btn-outline-info">Hello</button>
+                  <button type="submit" class="btn btn-rounded btn-outline-dark">Submit Here or Press Enter</button>
                 </form>
               </div>
             </div>
